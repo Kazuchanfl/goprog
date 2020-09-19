@@ -1,10 +1,22 @@
 package practice_2
 
-import "fmt"
+import (
+	"bufio"
+	"fmt"
+	"os"
+)
 
-func main() {
-	fmt.Printf("Yay! Let's a Go!")
+func Run() {
+	// set reader and writer
+	r := bufio.NewReader(os.Stdin)
+	w := bufio.NewWriter(os.Stdout)
+	defer w.Flush()
+
 	// 1. NとQを入力値として受け取る
+	var N, Q int
+	fmt.Fscan(r, &N)
+	fmt.Fscan(r, &Q)
+
 	// 2. Nの数だけアルファベットを順に文字列としてつなげる
 	// 3. N個のうち２つを組み合わせて出力
 	// 4. <もしくは>を入力値として受け取る
@@ -12,4 +24,6 @@ func main() {
 	// 6. 軽い順に並ぶまで3から5を繰り返す
 	// 7. 並べた文字列を出力する
 	// 8. プログラムを終了する
+
+	fmt.Printf("Yay! Let's a Go!")
 }

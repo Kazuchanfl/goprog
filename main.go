@@ -1,7 +1,7 @@
 package main
 
-import "github.com/Kazuchanfl/goprog/bufioPractice"
+import "github.com/Kazuchanfl/goprog/practice_2"
 
 func main() {
-	bufioPractice.Run()
+	practice_2.Run()
 }
